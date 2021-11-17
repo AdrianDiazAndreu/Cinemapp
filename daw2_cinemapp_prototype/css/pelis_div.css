@@ -1,0 +1,45 @@
+#grid_pelis {
+  
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 0.55fr) 1fr;
+    /*grid-template-rows: repeat(2, 1fr) repeat(2, 5.5fr) 1fr;*/
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+    transition: 0.15s;
+    }
+    
+    #id_1 { grid-area: 3 / 2 / 4 / 3; }
+    #id_2 { grid-area: 3 / 3 / 4 / 4; }
+    #id_3 { grid-area: 3 / 4 / 4 / 5; }
+    #id_4 { grid-area: 4 / 2 / 5 / 3; }
+    #id_5 { grid-area: 4 / 3 / 5 / 4; }
+    #id_6 { grid-area: 4 / 4 / 5 / 5; }
+  
+  /* (B) 1 COL ON SMALL SCREENS */
+  @media screen and (max-width:768px) {
+    #grid_sala { grid-template-columns: auto auto; }
+  }
+.div_peli{
+    background-color: orange;
+    text-align: center;
+    border-radius: 3px;
+    font-family: 'Mohave', sans-serif;
+    transition: transform .2s; 
+}
+
+.butt_peli{
+  background-color: transparent;
+  border: none;
+}
+
+.img_peli{
+  transition: transform .2s; 
+  border-radius: 3px;
+}
+
+
+.div_peli:hover {
+  transform: scale(1.05); 
+  transition: 0.20s;
+  background-color: orangered;
+}

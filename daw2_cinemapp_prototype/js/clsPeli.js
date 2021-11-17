@@ -15,6 +15,8 @@ class clsPeli{
 
     }
     borrarPeliz(){
+        var panel = document.getElementById("panel");
+        panel.innerHTML = "" ;
         this.grid_pelis.innerHTML = "" ;
     }
 

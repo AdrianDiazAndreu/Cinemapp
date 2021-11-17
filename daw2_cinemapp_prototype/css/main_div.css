@@ -46,7 +46,8 @@
 #panel{
     /*align-items: center;*/
     text-align: center;
-    margin-top: 87.5px; 
+    margin-top: 87.5px;
+    margin-left: 40px; 
 }
 #img_panel{
     margin-left: 100px;
